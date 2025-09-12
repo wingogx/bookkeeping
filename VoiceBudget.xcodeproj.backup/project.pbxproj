@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		1A000001294A123456789012 /* VoiceBudgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000002294A123456789012 /* VoiceBudgetApp.swift */; };
+		1A000003294A123456789012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000004294A123456789012 /* ContentView.swift */; };
 		1A000005294A123456789012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A000006294A123456789012 /* Assets.xcassets */; };
 		1A000007294A123456789012 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A000008294A123456789012 /* Preview Assets.xcassets */; };
+		1A000009294A123456789012 /* S01_ProjectSetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000A294A123456789012 /* S01_ProjectSetupTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A00000B294A123456789012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A00000C294A123456789012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A00000D294A123456789012;
+			remoteInfo = VoiceBudget;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1A00000E294A123456789012 /* VoiceBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A000002294A123456789012 /* VoiceBudgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceBudgetApp.swift; sourceTree = "<group>"; };
+		1A000004294A123456789012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A000006294A123456789012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A000008294A123456789012 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A00000F294A123456789012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A000010294A123456789012 /* VoiceBudgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceBudgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A00000A294A123456789012 /* S01_ProjectSetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S01_ProjectSetupTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A000011294A123456789012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A000012294A123456789012 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				1A000014294A123456789012 /* VoiceBudget */,
+				1A000015294A123456789012 /* VoiceBudgetTests */,
 				1A000016294A123456789012 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,15 +66,28 @@
 			isa = PBXGroup;
 			children = (
 				1A000017294A123456789012 /* App */,
+				1A000018294A123456789012 /* Presentation */,
+				1A000019294A123456789012 /* Domain */,
+				1A00001A294A123456789012 /* Data */,
+				1A00001B294A123456789012 /* Infrastructure */,
 				1A00001C294A123456789012 /* Resources */,
 			);
 			path = VoiceBudget;
+			sourceTree = "<group>";
+		};
+		1A000015294A123456789012 /* VoiceBudgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A00000A294A123456789012 /* S01_ProjectSetupTests.swift */,
+			);
+			path = VoiceBudgetTests;
 			sourceTree = "<group>";
 		};
 		1A000016294A123456789012 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				1A00000E294A123456789012 /* VoiceBudget.app */,
+				1A000010294A123456789012 /* VoiceBudgetTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,16 +96,45 @@
 			isa = PBXGroup;
 			children = (
 				1A000002294A123456789012 /* VoiceBudgetApp.swift */,
+				1A000004294A123456789012 /* ContentView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		1A000018294A123456789012 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1A000019294A123456789012 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1A00001A294A123456789012 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1A00001B294A123456789012 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		1A00001C294A123456789012 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				1A000006294A123456789012 /* Assets.xcassets */,
-				1A00001D294A123456789012 /* Preview Content */,
 				1A00000F294A123456789012 /* Info.plist */,
+				1A00001D294A123456789012 /* Preview Content */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -102,6 +167,24 @@
 			productReference = 1A00000E294A123456789012 /* VoiceBudget.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1A000021294A123456789012 /* VoiceBudgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A000022294A123456789012 /* Build configuration list for PBXNativeTarget "VoiceBudgetTests" */;
+			buildPhases = (
+				1A000023294A123456789012 /* Sources */,
+				1A000012294A123456789012 /* Frameworks */,
+				1A000024294A123456789012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A000025294A123456789012 /* PBXTargetDependency */,
+			);
+			name = VoiceBudgetTests;
+			productName = VoiceBudgetTests;
+			productReference = 1A000010294A123456789012 /* VoiceBudgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -115,9 +198,13 @@
 					1A00000D294A123456789012 = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					1A000021294A123456789012 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 1A00000D294A123456789012;
+					};
 				};
 			};
-			buildConfigurationList = 1A000021294A123456789012 /* Build configuration list for PBXProject "VoiceBudget" */;
+			buildConfigurationList = 1A000026294A123456789012 /* Build configuration list for PBXProject "VoiceBudget" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				1A00000D294A123456789012 /* VoiceBudget */,
+				1A000021294A123456789012 /* VoiceBudgetTests */,
 			);
 		};
 /* End PBXProject section */
@@ -145,6 +233,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A000024294A123456789012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,14 +247,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A000003294A123456789012 /* ContentView.swift in Sources */,
 				1A000001294A123456789012 /* VoiceBudgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A000023294A123456789012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A000009294A123456789012 /* S01_ProjectSetupTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1A000025294A123456789012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A00000D294A123456789012 /* VoiceBudget */;
+			targetProxy = 1A00000B294A123456789012 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		1A000022294A123456789012 /* Debug */ = {
+		1A000027294A123456789012 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +334,7 @@
 			};
 			name = Debug;
 		};
-		1A000023294A123456789012 /* Release */ = {
+		1A000028294A123456789012 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +390,7 @@
 			};
 			name = Release;
 		};
-		1A000024294A123456789012 /* Debug */ = {
+		1A000029294A123456789012 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -287,13 +399,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VoiceBudget/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = VoiceBudget/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +420,7 @@
 			};
 			name = Debug;
 		};
-		1A000025294A123456789012 /* Release */ = {
+		1A00002A294A123456789012 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -316,13 +429,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VoiceBudget/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = VoiceBudget/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,23 +450,70 @@
 			};
 			name = Release;
 		};
+		1A00002B294A123456789012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicebudget.app.VoiceBudgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceBudget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceBudget";
+			};
+			name = Debug;
+		};
+		1A00002C294A123456789012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicebudget.app.VoiceBudgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceBudget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceBudget";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A000021294A123456789012 /* Build configuration list for PBXProject "VoiceBudget" */ = {
+		1A00001E294A123456789012 /* Build configuration list for PBXNativeTarget "VoiceBudget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A000022294A123456789012 /* Debug */,
-				1A000023294A123456789012 /* Release */,
+				1A000029294A123456789012 /* Debug */,
+				1A00002A294A123456789012 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A00001E294A123456789012 /* Build configuration list for PBXNativeTarget "VoiceBudget" */ = {
+		1A000022294A123456789012 /* Build configuration list for PBXNativeTarget "VoiceBudgetTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A000024294A123456789012 /* Debug */,
-				1A000025294A123456789012 /* Release */,
+				1A00002B294A123456789012 /* Debug */,
+				1A00002C294A123456789012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A000026294A123456789012 /* Build configuration list for PBXProject "VoiceBudget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A000027294A123456789012 /* Debug */,
+				1A000028294A123456789012 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
