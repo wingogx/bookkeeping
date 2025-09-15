@@ -1,0 +1,69 @@
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+*.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata/
+
+# Build generated
+build/
+DerivedData/
+
+# Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+# Temporary files
+*.swp
+*.swo
+*~.nib
+*.tmp
+*.backup
+*.bak
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Development process files
+*test*.swift
+*debug*.swift
+*fix*.swift
+*check*.swift
+*verify*.swift
+*compile*.swift
+*bracket*.swift
+*syntax*.swift
+*minimal*.swift
+*comprehensive*.swift
+*final*.swift
+*complete*.swift
+*auto*.swift
+*toolbar*.swift
+*ios*.swift
+*prepare*.swift
+*simple*.swift
+*detailed*.swift
+*voice*.swift
+VERSION_*.md
+COMPILE_*.md
+FINAL_*.md
+XCODE_*.md
+*.current_backup
+*.v*.*.*.md
+
+# Process documentation
+Epic.md
+design.md
+v*.*.*.md
+功能清单*.md
+ui-design.md
