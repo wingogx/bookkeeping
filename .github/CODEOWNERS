@@ -1,0 +1,17 @@
+# Global owners
+* @wingogx
+
+# Core app files
+VoiceBudget/App/VoiceBudgetApp.swift @wingogx
+
+# Documentation
+README.md @wingogx
+docs/ @wingogx
+CLAUDE.md @wingogx
+
+# Configuration files
+VoiceBudget/Resources/Info.plist @wingogx
+*.xcodeproj/ @wingogx
+
+# GitHub configuration
+.github/ @wingogx

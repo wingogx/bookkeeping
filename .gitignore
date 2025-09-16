@@ -67,3 +67,37 @@ design.md
 v*.*.*.md
 功能清单*.md
 ui-design.md
+
+# GitHub and development
+.github/workflows/*.log
+.github/ISSUE_TEMPLATE/*.tmp
+.github/PULL_REQUEST_TEMPLATE/*.tmp
+
+# Screenshots (exclude actual files but keep directory)
+screenshots/*.png
+screenshots/*.jpg
+screenshots/*.jpeg
+!screenshots/README.md
+
+# Dependency managers
+Carthage/
+Pods/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Code coverage
+*.gcov
+*.gcno
+*.gcda
+coverage/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# App Store Connect API
+AuthKey_*.p8
+*.mobileprovision
+*.certSigningRequest
